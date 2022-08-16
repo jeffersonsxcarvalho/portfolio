@@ -17,6 +17,8 @@ body{
   background-color: var(--body-bg-color);
 }
 
+
+
 aside{
   display: flex;
   flex-direction: column;
@@ -58,23 +60,28 @@ aside{
 
 }
 
-h2, p {
+h2, p, li {
   color: var(--text-color);
   font-family: 'Merriweather Sans', sans-serif;
   font-weight: bold;
 }
 
+li {
+  font-size: small;
+}
+
 .card-contato {
   width: 100%;
-  height: 50px;
   display: flex;
   flex-direction: column;
-  height: 20%;
+  height: 25%;
   justify-items: left;
 }
 
-.card-contato div {
-  display: block; 
+.card-contato ul {
+  display: block;  
+  list-style: none;
+  align-items: center;
   width: 80%;
   height: 20px;
   margin-top: 25px;
@@ -87,9 +94,71 @@ h2, p {
   margin-left: 5%;
 }
 
-.card-contato img {
-  height: 5%;
+.card-contato ul li {
+  margin-top: 3%;
 }
+
+.card-contato img path {
+  height: 5%;
+  color: #302F3D;
+}
+
+.card-techs {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  justify-items: left;
+}
+
+.card-techs h2 {
+  margin: 10% 30%;  
+}
+
+.card-techs .techs {
+  margin-left: 5%;
+}
+
+.card-techs .techs button{
+  margin: 3%;
+  width: 25%;
+  height: 15%;
+  font-size: 1rem;
+  background-color: rgb(237, 149, 196);
+  border: 0;
+  border-radius: 10px;
+}
+
+.card-exp {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+ 
+  justify-items: left;
+}
+
+.card-exp h2 {
+  margin: 10% 0 5% 25%;
+  
+}
+
+.card-exp h4 {
+  font-size: large;
+}
+
+.card-exp ul {
+  margin-left: 15%;
+}
+
+.card-exp ul li {
+  margin-top: 10px;
+}
+
+
+
+
 
 
 
